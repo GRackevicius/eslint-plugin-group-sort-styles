@@ -1,0 +1,38 @@
+{
+  "name": "eslint-plugin-group-sort-styles",
+  "version": "1.0.0",
+  "description": "Sort styled component styles",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Giedrius",
+  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/**/*.js"
+  },
+  "dependencies": {
+    "postcss": "^8.3.11",
+    "requireindex": "^1.2.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-eslint-plugin": "^5.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "mocha": "5.0.5",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=6"
+  },
+  "license": "ISC"
+}
