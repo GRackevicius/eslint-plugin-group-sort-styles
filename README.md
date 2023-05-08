@@ -4,6 +4,52 @@ This ESLint plugin helps to enforce a consistent sorting order for CSS declarati
 
 ## Example
 
+    export const DrawerStyles = css<DrawerStyledTypes>`
+        transition: transform 0.3s ease;
+        border-top-left-radius: 16px;
+        margin-top: auto;
+        border-top-right-radius: 16px;
+        border-radius: 0px;
+        max-width: 100%;
+        width: 100%;
+
+        &.inactive {
+            transform: translateY(100%);
+        }
+    `;
+
+    ->
+
+    export const DrawerStyles = css<DrawerStyledTypes>`
+        width: 100%;
+        max-width: 100%;
+        margin-top: auto;
+        border-radius: 0px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        transition: transform 0.3s ease;
+
+        &.inactive {
+            transform: translateY(100%);
+        }
+    `;
+
+--\*--
+
+    const fontStyles = css`
+        /* font-family: 'Roboto', sans-serif; */
+        font-weight: 700;
+        font-size: 14px;
+    `;
+
+    ->
+
+    const fontStyles = css`
+        /* font-family: 'Roboto', sans-serif; */
+        font-size: 14px;
+        font-weight: 700;
+    `;
+
 ## Usage and Installation
 
 To use this plugin, first, install the plugin as a development dependency:
