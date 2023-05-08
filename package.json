@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-group-sort-styles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sort styled component styles",
   "keywords": [
     "eslint",
